@@ -56,10 +56,14 @@
                         
                            
                         <div class="d-flex align-items-center"> 
-                        <!-- <input type="text" class="form-control" placeholder="Search">         
+                        <!-- <input type="text" class="form-control " placeholder="Search">         
                          <button type="submit" style="margin-right:400px; margin-left:3px;" class="btn btn-danger"><i class="fas fa-search"></i></button> -->
-
-                        
+                        <div style="margin-right:400px; margin-left:3px;">
+                         <form class="form-inline my-2 my-lg-0 pr-5" type="GET" action="{{ url('/search') }}">
+                            <input  style="margin-right:40px;" class="form-control mr-sm-2" type="search" name="query" placeholder="Search" aria-label="Search">
+                        </form>
+                        </div>
+                    
                          
                         <a  style="margin-right:20px; text-decoration:none;" class="text-dark" href="/"><i class="fas fa-home fa-lg"></i></a>
                         <a  style="margin-right:20px; text-decoration:none;" class="text-dark" href="/p/create"><i class="far fa-plus-square fa-lg"></i></a>

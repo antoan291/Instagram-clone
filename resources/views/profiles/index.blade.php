@@ -22,8 +22,8 @@
         @endcan
         <div class="d-flex">
             <div style="margin-right:20px"><strong>{{ $postsCount }} </strong>posts</div>
-            <div style="margin-right:20px"><strong>{{ $followersCount }}</strong>followers</div>
-            <div style="margin-right:20px"><strong>{{ $followingCount }}</strong>following</div>
+            <div style="margin-right:20px"><strong>{{ $followersCount }} </strong>followers</div>
+            <div style="margin-right:20px"><strong>{{ $followingCount }} </strong>following</div>
 
             </div>
             <div class="pt-4 font-weight-bold">{{ $user->profile->title }}</div>

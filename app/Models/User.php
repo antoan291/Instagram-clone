@@ -66,8 +66,17 @@ class User extends Authenticatable
         return $this->hasMany(Post::class)->orderBy('created_at','DESC');//she ima mnogo postove podredeni po posledno dobaveno
     }
 
+
+    public function comments()
+    {
+        return $this->hasMany(Comments::class);
+    }
     public function following()
     {
         return $this->belongsToMany(Profile::class);//zashtoto moje da imame mn posledovateli i da sledvame nie mnogo v profile sushtoto
+    }
+    public function likes()
+    {
+        return $this->belongsToMany(Post::class);
     }
 }

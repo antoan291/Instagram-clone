@@ -14,6 +14,10 @@ class Post extends Model
     }
     public function comments()
     {
-        return $this->hasMany('App\Models\Comment');
+        return $this->hasMany(Comments::class);
+    }
+    public function likers()
+    {
+        return $this->belongsToMany(User::class);
     }
 }
